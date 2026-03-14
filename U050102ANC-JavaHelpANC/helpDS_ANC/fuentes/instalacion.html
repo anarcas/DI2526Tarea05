@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Estructura de instalaci&oacute;n - DevSoft Projects</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 18px; line-height: 1.45; }
+    h1 { color: #1e4db7; }
+    code { background: #f3f3f3; padding: 2px 4px; border-radius: 4px; }
+    pre { background: #f7f7f7; padding: 10px; border-radius: 6px; }
+    .nota { background: #eef3ff; border-left: 4px solid #1e4db7; padding: 10px; }
+  </style>
+</head>
+<body>
+
+<h1>Estructura de instalaci&oacute;n</h1>
+
+<p>
+  Esta secci&oacute;n explica c&oacute;mo se organiza la aplicaci&oacute;n para su distribuci&oacute;n e instalaci&oacute;n
+  (por ejemplo, usando <b>Launch4j</b> para generar el <code>.exe</code> y <b>NSIS</b> para crear el instalador).
+</p>
+
+<h2>&iquest;Qu&eacute; se instala?</h2>
+<p>Una instalaci&oacute;n t&iacute;pica de <b>DevSoft Projects</b> incluye:</p>
+<ul>
+  <li>El ejecutable <code>DevSoftProjects.exe</code> (generado desde el <code>.jar</code>).</li>
+  <li>La carpeta <code>lib/</code> con las librer&iacute;as necesarias.</li>
+  <li>La carpeta <code>helpDS/</code> con la ayuda JavaHelp (HTML, toc, &iacute;ndice y b&uacute;squeda).</li>
+</ul>
+
+<h2>Estructura recomendada</h2>
+<p>Ejemplo de estructura dentro de la carpeta de instalaci&oacute;n:</p>
+
+<pre>
+DevSoftProjects/
+  DevSoftProjects.exe
+  lib/
+    (librer&iacute;as necesarias)
+  helpDS/
+    help_set.hs
+    map.jhm
+    toc.xml
+    indice.xml
+    fuentes/
+      general.html
+      crear_proyecto.html
+      instalacion.html
+    JavaHelpSearch/
+      (archivos generados por el indexador)
+</pre>
+
+<div class="nota">
+  <b>Importante:</b> Para que la pesta&ntilde;a <i>Buscar</i> funcione en JavaHelp, es necesario generar los
+  archivos de <code>JavaHelpSearch/</code> mediante la herramienta de indexaci&oacute;n.
+</div>
+
+</body>
+</html>
