@@ -1,0 +1,18 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\DevSoft_v1.0.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	1.008.000
+Java max ver:	
+JRE paths:	jre1.8.0
+Check launcher:	C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\jre1.8.0\bin\javaw.exe (OK)
+Version string: 1.008.000_471 / 64-Bit (OK)
+Launcher:	C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\jre1.8.0\bin\javaw.exe
+Launcher args:	-jar "C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\DevSoft_v1.0.exe"
+Args length:	113/32768 chars
+Exit code:	259

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE toc
+PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 2.0//EN"
+"http://java.sun.com/products/javahelp/toc_2_0.dtd">
+
+<toc version="2.0">
+    <tocitem target="ayuda_general" text="Bienvenido a la Ayuda" />
+
+    <tocitem text="Guía de Inicio" target="ayuda_general">
+        <tocitem target="ayuda_instalacion" text="Proceso de Instalación" />
+        <tocitem target="ayuda_crear" text="Cómo crear tu primer proyecto" />
+    </tocitem>
+
+    <tocitem target="ayuda_general" text="Soporte y Contacto" />
+</toc>
