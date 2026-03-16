@@ -12,13 +12,20 @@ import javax.help.HelpSet;
 import javax.swing.JOptionPane;
 
 /**
+ * Clase principal que representa la interfaz gráfica de usuario (GUI). Gestiona
+ * la ventana principal de la aplicación, integrando el sistema de ayuda
+ * JavaHelp y la lógica de navegación del proyecto DevSoft.
  *
- * @author anaranjo
+ * @author Antonio Naranjo Castillo
+ * @version 1.0
  */
 public class FormularioPrincipal extends javax.swing.JFrame {
 
     /**
-     * Creates new form U050102ANC
+     * Constructor de la clase. Inicializa los componentes de la interfaz
+     * gráfica y configura el sistema de ayuda JavaHelp vinculando el archivo
+     * HelpSet con la pulsación de la tecla F1 y los botones de ayuda
+     * correspondientes.
      */
     public FormularioPrincipal() {
         // Se inician los componentes de la interfaz
@@ -147,22 +154,49 @@ public class FormularioPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Gestiona el evento de pulsación sobre el botón de salida. Finaliza la
+     * aplicación y cierra de forma segura todos los recursos de la aplicación.
+     *
+     * @param evt Objeto de evento que contiene los datos del clic realizado.
+     */
     private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
         // TODO add your handling code here:
         confirmarSalida();
     }//GEN-LAST:event_jButtonSalirActionPerformed
 
+    /**
+     * Gestiona el evento de selección de la opción "Salir" en la barra de menú.
+     * Proporciona una vía alternativa de cierre de la aplicación.
+     *
+     * @param evt Objeto de evento con la información de la selección del menú.
+     */
     private void jMenuSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSalirActionPerformed
         // TODO add your handling code here:
         confirmarSalida();
     }//GEN-LAST:event_jMenuSalirActionPerformed
 
+    /**
+     * Gestiona el evento de clic de ratón sobre el área de la ventana principal
+     * de la interfaz. Este método se dispara cuando el usuario hace clic en
+     * cualquier zona libre del contenedor principal, permitiendo definir
+     * comportamientos específicos de interacción con la interfaz.
+     *
+     * @param evt Objeto MouseEvent que contiene información sobre la posición
+     * del puntero del ratón y tras pulsar el botón izquierdo del mismo.
+     */
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
         // TODO add your handling code here:
         // La ventana principal recupera el foco al hacer clic sobre ella
         getContentPane().requestFocusInWindow();
     }//GEN-LAST:event_formMouseClicked
 
+    /**
+     * Carga y configura el sistema de ayuda JavaHelp de la aplicación. Este
+     * método localiza el archivo HelpSet (HS), crea el componente HelpBroker y
+     * vincula la ayuda con los distintos elementos de la interfaz, permitiendo
+     * la activación de la ayuda mediante la tecla F1 y botones específicos.
+     */
     public void obtenerAyuda() {
 
         try {
@@ -197,6 +231,12 @@ public class FormularioPrincipal extends javax.swing.JFrame {
 
     }
 
+    /**
+     * Muestra un cuadro de diálogo de confirmación antes de cerrar la
+     * aplicación. Utiliza un JOptionPane para solicitar al usuario que confirme
+     * su intención de salir. Si la respuesta es afirmativa, se procede al
+     * cierre controlado del aplicativo.
+     */
     private void confirmarSalida() {
         // Se definen los textos
         String mensaje = "¿Seguro que desea salir de la aplicación?";
@@ -213,7 +253,7 @@ public class FormularioPrincipal extends javax.swing.JFrame {
         if (respuesta == JOptionPane.YES_OPTION) {
             System.exit(0);
         } else {
-        // Se vuelve a la ventana principal
+            // Se vuelve a la ventana principal
             // Se limpia el campo de texto
             txtNombreProyecto.setText("");
             // Se devuelve el foco a la ventana principal
@@ -222,7 +262,11 @@ public class FormularioPrincipal extends javax.swing.JFrame {
     }
 
     /**
-     * @param args the command line arguments
+     * Punto de entrada principal de la aplicación. Configura el entorno de
+     * ejecución, establece el aspecto visual del sistema operativo y lanza la
+     * interfaz gráfica.
+     *
+     * @param args Argumentos de la línea de comandos.
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

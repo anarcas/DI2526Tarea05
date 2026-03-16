@@ -9,10 +9,21 @@ Requires JDK:	No
 Requires 64-Bit: No
 Java min ver:	1.008.000
 Java max ver:	
-JRE paths:	jre1.8.0
-Check launcher:	C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\jre1.8.0\bin\javaw.exe (OK)
-Version string: 1.008.000_471 / 64-Bit (OK)
-Launcher:	C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\jre1.8.0\bin\javaw.exe
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\anaranjo\AppData\Local\Microsoft\WindowsApps;C:\Users\anaranjo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Java\jre1.8.0_333\bin
+JRE paths:	;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\anaranjo\AppData\Local\Microsoft\WindowsApps;C:\Users\anaranjo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Java\jre1.8.0_333\bin
+Check launcher:	C:\WINDOWS\System32\WindowsPowerShell\v1.0\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\system32\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\Wbem\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\OpenSSH\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\dotnet\bin\javaw.exe (not found)
+Check launcher:	C:\Users\anaranjo\AppData\Local\Microsoft\WindowsApps\bin\javaw.exe (not found)
+Check launcher:	C:\Users\anaranjo\AppData\Local\Programs\Microsoft VS Code\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\Java\jre1.8.0_333\bin\javaw.exe (OK)
+Version string: 1.008.000_333 / 32-Bit (OK)
+Launcher:	C:\Program Files (x86)\Java\jre1.8.0_333\bin\javaw.exe
 Launcher args:	-jar "C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\DevSoft_v1.0.exe"
 Args length:	113/32768 chars
 Exit code:	259

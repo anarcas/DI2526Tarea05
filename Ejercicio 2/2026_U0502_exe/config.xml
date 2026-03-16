@@ -15,7 +15,7 @@
   <manifest></manifest>
   <icon>C:\Users\anaranjo\dam\2526\Naranjo_Castillo_Antonio_DI05_Tarea\Ejercicio 2\2026_U0502_exe\Logo_DevSoft_icono.ico</icon>
   <jre>
-    <path>jre1.8.0</path>
+    <path>%JAVA_HOME%;%PATH%</path>
     <requiresJdk>false</requiresJdk>
     <requires64Bit>false</requires64Bit>
     <minVersion>1.8.0</minVersion>
@@ -27,4 +27,11 @@
     <timeout>60</timeout>
     <timeoutErr>true</timeoutErr>
   </splash>
+  <messages>
+    <startupErr>An error occurred while starting the application.</startupErr>
+    <jreNotFoundErr>This application requires a Java Runtime Environment.</jreNotFoundErr>
+    <jreVersionErr>This application requires a Java Runtime Environment</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
 </launch4jConfig>
